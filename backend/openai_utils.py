@@ -1,7 +1,7 @@
 from transformers import pipeline
 import json
 
-nlp = pipeline("text-generation", model="gpt2")  # or another model
+nlp = pipeline("text-generation", model="gpt2")  
 
 def clean_output(output: str) -> dict:
     try:
